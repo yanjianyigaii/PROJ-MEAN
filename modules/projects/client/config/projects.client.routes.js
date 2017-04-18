@@ -1,21 +1,20 @@
-(function (){
-    'use strict';
+(function () {
+  'use strict';
 
-    angular
+  angular
     .module('articles.routes')
     .config(routeConfig);
 
-    routeConfig.$inject = ['$stateProvider'];
+  routeConfig.$inject = ['$stateProvider'];
 
-    function routeConfig($stateProvider){
-        $stateProvider
-        .state('projects', {
-            abstract: true,
-            url: '/projects',
-            template: '<ui-view/>'
-        })
-        .state('project.list',{
-            
-        })
-    }
+  function routeConfig($stateProvider) {
+    $stateProvider
+    .state('projects', {
+      abstract: true,
+      url: '/projects',
+      template: '<ui-view/>'
+    })
+    .state('project.list', {
+    });
+  }
 }());
